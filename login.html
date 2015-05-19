@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="uft-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<title>柯豪的图书管理系统</title>
+</head>
+<body style="background-color:#1abc9c;">
+	<div class="col-lg-6" style="position:fixed; top:25%; left:35%; width:30%;">
+		<div class="well bs-component">
+			<form class="form-horizontal" action="login.php" method="post">
+  			<fieldset>
+    			<legend style="text-align:center;">登录到图书管理系统</legend>
+               	<div class="form-group" style="padding:0px; text-align:center;">
+                  	<label for="select" class="control-label">身份类别</label>
+                  	<select class="form-control" id="select" name="type">
+                    	<option>我是用户</option>
+                     	<option>我是管理员</option>
+                  	</select>
+               	</div>
+    			<div class="form-group">
+	      			<label for="inputEmail" class="col-lg-2 control-label">帐号</label>
+	      			<div class="col-lg-10">
+	        			<input type="text" class="form-control" id="inputEmail" name="account" placeholder=" 管理员ID/借书卡号">
+	      			</div>
+    			</div>
+    			<div class="form-group">
+      				<label for="inputPassword" class="col-lg-2 control-label">密码</label>
+      				<div class="col-lg-10">
+        				<input type="password" class="form-control" id="inputPassword" name="password" placeholder="密码(用户无密码)">
+      				</div>
+    			</div>
+    			<div class="form-group">
+      				<div class="col-lg-10 col-lg-offset-2">
+        				<button class="btn btn-default">取消</button>
+        				<button type="submit" class="btn btn-info" style="width:75%">登录</button>
+      				</div>
+    			</div>
+  			</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
